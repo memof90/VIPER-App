@@ -8,5 +8,15 @@
 import Foundation
 
 
+protocol HomeUseCase {
+    
+}
 
 
+class HomeIntercator {
+    
+}
+
+extension HomeIntercator: HomeUseCase {
+    
+}
