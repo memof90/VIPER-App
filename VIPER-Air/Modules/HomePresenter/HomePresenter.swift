@@ -7,3 +7,20 @@
 
 import Foundation
 
+
+protocol HomePresentation {
+    func viewDidLoad()
+}
+
+
+class HomePresenter {
+    
+}
+
+extension HomePresenter: HomePresentation {
+    func viewDidLoad() {
+        
+    }
+    
+    
+}
