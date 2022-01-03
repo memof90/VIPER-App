@@ -14,7 +14,15 @@ protocol HomePresentation {
 
 
 class HomePresenter {
+    weak var view: HomeView?
+    var interactor: HomeUseCase
+    var router: HomeRouting
     
+    init(view: HomeView, interactor: HomeUseCase, router: HomeRouting){
+        self.view = view
+        self.interactor = interactor
+        self.router = router
+    }
 }
 
 extension HomePresenter: HomePresentation {
