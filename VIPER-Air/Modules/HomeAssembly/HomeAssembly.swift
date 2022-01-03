@@ -14,7 +14,7 @@ class HomeAssembly {
     static func build() -> UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let view = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        
+        view.view.backgroundColor = .red
 //        MARK: - Instace Interactor
         let interactor = HomeIntercator()
         let router = HomeRouter(view: view)
