@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+
+protocol HomeRouting {
+    
+}
+
+class HomeRouter {
+    
+}
+
+extension HomeRouter: HomeRouting {
+    
+}
