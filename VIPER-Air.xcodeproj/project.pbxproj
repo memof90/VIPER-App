@@ -17,6 +17,7 @@
 		8D3B40D1278360BD00A30FAB /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3B40D0278360BD00A30FAB /* HomeInteractor.swift */; };
 		8D3B40D4278360DE00A30FAB /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3B40D3278360DE00A30FAB /* HomeRouter.swift */; };
 		8D3B40D82783612400A30FAB /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3B40D72783612400A30FAB /* HomeAssembly.swift */; };
+		8D3B40DE27839AE400A30FAB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3B40DD27839AE400A30FAB /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8D3B40D0278360BD00A30FAB /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		8D3B40D3278360DE00A30FAB /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		8D3B40D72783612400A30FAB /* HomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
+		8D3B40DD27839AE400A30FAB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		8D3B40CB27835D8100A30FAB /* HomeEntity */ = {
 			isa = PBXGroup;
 			children = (
+				8D3B40DC27839AD000A30FAB /* User */,
 			);
 			path = HomeEntity;
 			sourceTree = "<group>";
@@ -133,6 +136,14 @@
 				8D3B40D72783612400A30FAB /* HomeAssembly.swift */,
 			);
 			path = HomeAssembly;
+			sourceTree = "<group>";
+		};
+		8D3B40DC27839AD000A30FAB /* User */ = {
+			isa = PBXGroup;
+			children = (
+				8D3B40DD27839AE400A30FAB /* User.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +221,7 @@
 				8D3B40D4278360DE00A30FAB /* HomeRouter.swift in Sources */,
 				8D3B40B427835BE200A30FAB /* AppDelegate.swift in Sources */,
 				8D3B40B627835BE200A30FAB /* SceneDelegate.swift in Sources */,
+				8D3B40DE27839AE400A30FAB /* User.swift in Sources */,
 				8D3B40D1278360BD00A30FAB /* HomeInteractor.swift in Sources */,
 				8D3B40CF278360AE00A30FAB /* HomePresenter.swift in Sources */,
 				8D3B40D82783612400A30FAB /* HomeAssembly.swift in Sources */,
