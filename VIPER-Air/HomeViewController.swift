@@ -12,6 +12,8 @@ protocol HomeView: AnyObject {
 }
 
 class HomeViewController: UIViewController {
+    
+    var presenter: HomePresenter?
 
     override func viewDidLoad() {
         super.viewDidLoad()
