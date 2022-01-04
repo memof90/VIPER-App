@@ -19,6 +19,7 @@ class HomeViewController: UIViewController {
         }
     }
     
+    
     var userData: [UserResult] = []
 
     override func viewDidLoad() {
