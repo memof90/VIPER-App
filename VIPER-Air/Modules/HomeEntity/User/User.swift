@@ -7,17 +7,28 @@
 
 import Foundation
 
-struct User: Codable {
-    let results : [Results]
-    let info :Info
+struct Users: Codable {
+    let results : [UserResult]?
+    let info :Info?
+
+    enum CodingKeys: String, CodingKey {
+        case results
+        case info
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.results = try container.decode([UserResult].self, forKey: .results)
+        self.info = try container.decode(Info.self, forKey: .info)
+    }
 }
 
 // MARK: - Info
 struct Info: Codable {
-    let seed: String
-    let results: Int
-    let page: Int
-    let version: String
+    let seed: String?
+    let results: Int?
+    let page: Int?
+    let version: String?
 
     enum CodingKeys: String, CodingKey {
         case seed
@@ -36,22 +47,22 @@ struct Info: Codable {
 }
 
 // MARK: - Results
-struct Results: Codable {
-    let gender: String
-    let name : Name
-    let location: Location
-    let email : String
-    let login: Login
-    let dob : Dob
-    let registered: Registered
-    let phone: String
-    let cell: String
-    let id : ID
-    let picture: Picture
-    let nat: String
-    
-    
-    
+struct UserResult: Codable {
+    let gender: String?
+    let name : Name?
+    let location: Location?
+    let email : String?
+    let login: Login?
+    let dob : Dob?
+    let registered: Registered?
+    let phone: String?
+    let cell: String?
+    let id : ID?
+    let picture: Picture?
+    let nat: String?
+
+
+
     enum CodingKeys: String, CodingKey {
         case gender
         case name
@@ -86,20 +97,22 @@ struct Results: Codable {
 
 
 struct Name : Codable {
-    let title: String
-    let first: String
-    let last: String
+    let title: String?
+    let first: String?
+    let last: String?
 }
 
 struct Location: Codable {
-    let street: Street
-    let city: String
-    let state: String
-    let postcode: Int
-    let coordinates: Coordinates
-    let timezone: TimeZone
+    let street: Street?
+    let city: String?
+    let state: String?
+    let postcode: Int?
+    let coordinates: Coordinates?
+    let timezone: TimeZone?
     
-    enum CodingKeys: String, CodingKey {
+   
+
+    enum CodingKeys: String, CodingKey  {
         case street
         case city
         case state
@@ -107,7 +120,7 @@ struct Location: Codable {
         case coordinates
         case timezone
     }
-    
+
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.street = try container.decode(Street.self, forKey: .street)
@@ -120,14 +133,14 @@ struct Location: Codable {
 }
 
 struct Street: Codable {
-    let number: Int
-    let name: String
-    
-    enum CodingKeys: String, CodingKey {
+    let number: Int?
+    let name: String?
+
+    enum CodingKeys: String, CodingKey  {
         case number
         case name
     }
-    
+
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.number = try container.decode(Int.self, forKey: .number)
@@ -136,34 +149,34 @@ struct Street: Codable {
 }
 
 struct Coordinates: Codable {
-    let latitude: String
-    let longitude: String
-    
-    enum CodingKeys: String, CodingKey {
+    let latitude: String?
+    let longitude: String?
+
+    enum CodingKeys: String, CodingKey  {
         case latitude
         case longitude
     }
-    
+
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.latitude = try container.decode(String.self, forKey: .latitude)
         self.longitude = try container.decode(String.self, forKey: .longitude)
     }
-    
-    
+
+
 }
 
 
 struct TimeZone: Codable {
-    let offset : String
-    let description: String
-    
-    
-    enum CodingKeys: String, CodingKey {
+    let offset : String?
+    let description: String?
+
+
+    enum CodingKeys: String, CodingKey  {
         case offset
         case description
     }
-    
+
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.offset = try container.decode(String.self, forKey: .offset)
@@ -172,15 +185,15 @@ struct TimeZone: Codable {
 }
 
 struct Login : Codable{
-    let uuid: String
-    let username: String
-    let password: String
-    let salt : String
-    let md5: String
-    let sha1: String
-    let sha256: String
-    
-    enum CodingKeys: String, CodingKey {
+    let uuid: String?
+    let username: String?
+    let password: String?
+    let salt : String?
+    let md5: String?
+    let sha1: String?
+    let sha256: String?
+
+    enum CodingKeys: String, CodingKey  {
         case uuid
         case username
         case password
@@ -189,7 +202,7 @@ struct Login : Codable{
         case sha1
         case sha256
     }
-    
+
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.uuid = try container.decode(String.self, forKey: .uuid)
@@ -200,18 +213,18 @@ struct Login : Codable{
         self.sha1 = try container.decode(String.self, forKey: .sha1)
         self.sha256 = try container.decode(String.self, forKey: .sha256)
     }
-    
+
 }
 
 struct Dob: Codable {
-    let date : String
-    let age: Int
-    
-    enum CodingKeys: String, CodingKey {
+    let date : String?
+    let age: Int?
+
+    enum CodingKeys: String, CodingKey  {
         case date
         case age
     }
-    
+
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.date =  try container.decode(String.self, forKey: .date)
@@ -220,51 +233,51 @@ struct Dob: Codable {
 }
 
 struct Registered: Codable {
-    
-    let date : String
-    let age : String
-    
-    enum CodingKeys: String, CodingKey {
+
+    let date : String?
+    let age : Int?
+
+    enum CodingKeys: String, CodingKey  {
         case date
         case age
     }
-    
+
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.date =  try container.decode(String.self, forKey: .date)
-        self.age =  try container.decode(String.self, forKey: .age)
+        self.age =  try container.decode(Int.self, forKey: .age)
     }
 }
 
 struct ID: Codable {
-    let name : String
-    let value: String
-    
-    enum CodingKeys: String, CodingKey {
+    let name : String?
+    let value: String?
+
+    enum CodingKeys: String, CodingKey  {
         case name
         case value
     }
-    
+
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.name =  try container.decode(String.self, forKey: .name)
         self.value = try container.decode(String.self, forKey: .name)
     }
-    
+
 }
 
 
 struct Picture: Codable {
-    let large: String
-    let medium: String
-    let thumbnail: String
-    
-    enum CodingKeys: String, CodingKey {
+    let large: String?
+    let medium: String?
+    let thumbnail: String?
+
+    enum CodingKeys: String, CodingKey  {
         case large
         case medium
         case thumbnail
     }
-    
+
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.large = try container.decode(String.self, forKey: .large)
@@ -272,5 +285,7 @@ struct Picture: Codable {
         self.thumbnail = try container.decode(String.self, forKey: .thumbnail)
     }
 }
+
+
 
 

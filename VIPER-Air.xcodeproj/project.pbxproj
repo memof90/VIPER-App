@@ -18,6 +18,12 @@
 		8D3B40D4278360DE00A30FAB /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3B40D3278360DE00A30FAB /* HomeRouter.swift */; };
 		8D3B40D82783612400A30FAB /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3B40D72783612400A30FAB /* HomeAssembly.swift */; };
 		8D3B40DE27839AE400A30FAB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3B40DD27839AE400A30FAB /* User.swift */; };
+		8D95937F2784C3A900A7BD07 /* ModelUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95937E2784C3A800A7BD07 /* ModelUser.swift */; };
+		8DD6CA7D2783BE9900C805CF /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD6CA7C2783BE9900C805CF /* NetworkServices.swift */; };
+		8DD6CA7F2783C11C00C805CF /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD6CA7E2783C11C00C805CF /* CustomError.swift */; };
+		8DD6CA812783C16E00C805CF /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD6CA802783C16E00C805CF /* HTTPMethod.swift */; };
+		8DD6CA832783C18E00C805CF /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD6CA822783C18E00C805CF /* Path.swift */; };
+		8DD6CA852783C85800C805CF /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD6CA842783C85800C805CF /* APIError.swift */; };
 		B4D8141D6D6FB593E92AD989 /* Pods_VIPER_Air.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6CAAA7BC5E490378895751 /* Pods_VIPER_Air.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +43,12 @@
 		8D3B40D3278360DE00A30FAB /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		8D3B40D72783612400A30FAB /* HomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
 		8D3B40DD27839AE400A30FAB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8D95937E2784C3A800A7BD07 /* ModelUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUser.swift; sourceTree = "<group>"; };
+		8DD6CA7C2783BE9900C805CF /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		8DD6CA7E2783C11C00C805CF /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		8DD6CA802783C16E00C805CF /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		8DD6CA822783C18E00C805CF /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		8DD6CA842783C85800C805CF /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		BD6CAAA7BC5E490378895751 /* Pods_VIPER_Air.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_Air.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -158,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				8D3B40DD27839AE400A30FAB /* User.swift */,
+				8D95937E2784C3A800A7BD07 /* ModelUser.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -165,6 +178,11 @@
 		8DD6CA7B2783BBD900C805CF /* Services  */ = {
 			isa = PBXGroup;
 			children = (
+				8DD6CA7C2783BE9900C805CF /* NetworkServices.swift */,
+				8DD6CA7E2783C11C00C805CF /* CustomError.swift */,
+				8DD6CA802783C16E00C805CF /* HTTPMethod.swift */,
+				8DD6CA822783C18E00C805CF /* Path.swift */,
+				8DD6CA842783C85800C805CF /* APIError.swift */,
 			);
 			path = "Services ";
 			sourceTree = "<group>";
@@ -296,11 +314,17 @@
 				8D3B40B827835BE200A30FAB /* HomeViewController.swift in Sources */,
 				8D3B40D4278360DE00A30FAB /* HomeRouter.swift in Sources */,
 				8D3B40B427835BE200A30FAB /* AppDelegate.swift in Sources */,
+				8DD6CA812783C16E00C805CF /* HTTPMethod.swift in Sources */,
+				8D95937F2784C3A900A7BD07 /* ModelUser.swift in Sources */,
+				8DD6CA7D2783BE9900C805CF /* NetworkServices.swift in Sources */,
 				8D3B40B627835BE200A30FAB /* SceneDelegate.swift in Sources */,
+				8DD6CA7F2783C11C00C805CF /* CustomError.swift in Sources */,
 				8D3B40DE27839AE400A30FAB /* User.swift in Sources */,
 				8D3B40D1278360BD00A30FAB /* HomeInteractor.swift in Sources */,
 				8D3B40CF278360AE00A30FAB /* HomePresenter.swift in Sources */,
+				8DD6CA832783C18E00C805CF /* Path.swift in Sources */,
 				8D3B40D82783612400A30FAB /* HomeAssembly.swift in Sources */,
+				8DD6CA852783C85800C805CF /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
