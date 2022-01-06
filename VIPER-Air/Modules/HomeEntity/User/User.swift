@@ -110,8 +110,6 @@ struct Location: Codable {
     let coordinates: Coordinates?
     let timezone: TimeZone?
     
-   
-
     enum CodingKeys: String, CodingKey  {
         case street
         case city
