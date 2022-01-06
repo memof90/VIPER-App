@@ -37,11 +37,15 @@ class HomeTableViewCell: UITableViewCell {
     }
     
     func configureCell(user: UserResult, index: Int) {
-        guard let name = user.name?.first, let lastName = user.name?.last, let gender = user.gender, let age = user.dob?.age else {return}
+        guard let name = user.name?.first, let lastName = user.name?.last, let gender = user.gender, let age = user.dob?.age, let imageMedium = user.picture?.medium else {return}
         self.nameLbl.text = "\(index). \(name) \(lastName)"
         self.genderLbl.text =  gender
         self.ageLbl.text = "Edad: \(age)"
         
+        let url = URL(string: imageMedium)
+//        let data = try? Data(contentsOf: url!)
+        guard let data = try? Data(contentsOf: url!) else { return }
+        self.HomeImage.image = UIImage(data: data)
         
     }
     
