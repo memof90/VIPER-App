@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeTableViewCell: UITableViewCell {
     
@@ -42,11 +43,33 @@ class HomeTableViewCell: UITableViewCell {
         self.genderLbl.text =  gender
         self.ageLbl.text = "Edad: \(age)"
         
-        let url = URL(string: imageMedium)
-//        let data = try? Data(contentsOf: url!)
-        guard let data = try? Data(contentsOf: url!) else { return }
-        self.HomeImage.image = UIImage(data: data)
+        loadImage(nameImage: imageMedium)
         
+    }
+    
+    func loadImage(nameImage: String) {
+        let url = URL(string: nameImage)
+        let processor = DownsamplingImageProcessor(size: HomeImage.bounds.size)
+                     |> RoundCornerImageProcessor(cornerRadius: 20)
+        HomeImage.kf.indicatorType = .activity
+        HomeImage.kf.setImage(
+            with: url,
+            placeholder: UIImage(named: "placeholderImage"),
+            options: [
+                .processor(processor),
+                .scaleFactor(UIScreen.main.scale),
+                .transition(.fade(1)),
+                .cacheOriginalImage
+            ])
+        {
+            result in
+            switch result {
+            case .success(let value):
+                print("Task done for: \(value.source.url?.absoluteString ?? "")")
+            case .failure(let error):
+                print("Job failed: \(error.localizedDescription)")
+            }
+        }
     }
     
     override func prepareForReuse() {
