@@ -17,9 +17,21 @@
 		8D3B40D1278360BD00A30FAB /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3B40D0278360BD00A30FAB /* HomeInteractor.swift */; };
 		8D3B40D4278360DE00A30FAB /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3B40D3278360DE00A30FAB /* HomeRouter.swift */; };
 		8D3B40D82783612400A30FAB /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3B40D72783612400A30FAB /* HomeAssembly.swift */; };
+		8D3B40DE27839AE400A30FAB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3B40DD27839AE400A30FAB /* User.swift */; };
+		8D9593832785133000A7BD07 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9593812785133000A7BD07 /* HomeTableViewCell.swift */; };
+		8D9593842785133000A7BD07 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D9593822785133000A7BD07 /* HomeTableViewCell.xib */; };
+		8D95938727851EBE00A7BD07 /* ExtViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95938627851EBE00A7BD07 /* ExtViewCell.swift */; };
+		8DD6CA7D2783BE9900C805CF /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD6CA7C2783BE9900C805CF /* NetworkServices.swift */; };
+		8DD6CA7F2783C11C00C805CF /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD6CA7E2783C11C00C805CF /* CustomError.swift */; };
+		8DD6CA812783C16E00C805CF /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD6CA802783C16E00C805CF /* HTTPMethod.swift */; };
+		8DD6CA832783C18E00C805CF /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD6CA822783C18E00C805CF /* Path.swift */; };
+		8DD6CA852783C85800C805CF /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD6CA842783C85800C805CF /* APIError.swift */; };
+		B4D8141D6D6FB593E92AD989 /* Pods_VIPER_Air.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6CAAA7BC5E490378895751 /* Pods_VIPER_Air.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11C2092FA0D6849C6000C71B /* Pods-VIPER-Air.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-Air.debug.xcconfig"; path = "Target Support Files/Pods-VIPER-Air/Pods-VIPER-Air.debug.xcconfig"; sourceTree = "<group>"; };
+		35A83E4A130E49D7F8788222 /* Pods-VIPER-Air.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-Air.release.xcconfig"; path = "Target Support Files/Pods-VIPER-Air/Pods-VIPER-Air.release.xcconfig"; sourceTree = "<group>"; };
 		8D3B40B027835BE200A30FAB /* VIPER-Air.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-Air.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3B40B327835BE200A30FAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D3B40B527835BE200A30FAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +44,16 @@
 		8D3B40D0278360BD00A30FAB /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		8D3B40D3278360DE00A30FAB /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		8D3B40D72783612400A30FAB /* HomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
+		8D3B40DD27839AE400A30FAB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8D9593812785133000A7BD07 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		8D9593822785133000A7BD07 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		8D95938627851EBE00A7BD07 /* ExtViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtViewCell.swift; sourceTree = "<group>"; };
+		8DD6CA7C2783BE9900C805CF /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		8DD6CA7E2783C11C00C805CF /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		8DD6CA802783C16E00C805CF /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		8DD6CA822783C18E00C805CF /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		8DD6CA842783C85800C805CF /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		BD6CAAA7BC5E490378895751 /* Pods_VIPER_Air.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_Air.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +61,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D8141D6D6FB593E92AD989 /* Pods_VIPER_Air.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		809C490131EE82B044B05598 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD6CAAA7BC5E490378895751 /* Pods_VIPER_Air.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8D3B40A727835BE200A30FAB = {
 			isa = PBXGroup;
 			children = (
 				8D3B40B227835BE200A30FAB /* VIPER-Air */,
 				8D3B40B127835BE200A30FAB /* Products */,
+				B8F517840949947591D8BB36 /* Pods */,
+				809C490131EE82B044B05598 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,10 +97,11 @@
 		8D3B40B227835BE200A30FAB /* VIPER-Air */ = {
 			isa = PBXGroup;
 			children = (
+				8D95938827851EE300A7BD07 /* Utils */,
+				8DD6CA7B2783BBD900C805CF /* Services  */,
 				8D3B40C727835D4900A30FAB /* Modules */,
 				8D3B40B327835BE200A30FAB /* AppDelegate.swift */,
 				8D3B40B527835BE200A30FAB /* SceneDelegate.swift */,
-				8D3B40B727835BE200A30FAB /* HomeViewController.swift */,
 				8D3B40B927835BE200A30FAB /* Main.storyboard */,
 				8D3B40BC27835BE600A30FAB /* Assets.xcassets */,
 				8D3B40BE27835BE600A30FAB /* LaunchScreen.storyboard */,
@@ -92,6 +126,8 @@
 		8D3B40C827835D5F00A30FAB /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				8D959380278512F700A7BD07 /* HomeViewCell */,
+				8D3B40B727835BE200A30FAB /* HomeViewController.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -115,6 +151,7 @@
 		8D3B40CB27835D8100A30FAB /* HomeEntity */ = {
 			isa = PBXGroup;
 			children = (
+				8D3B40DC27839AD000A30FAB /* User */,
 			);
 			path = HomeEntity;
 			sourceTree = "<group>";
@@ -135,6 +172,60 @@
 			path = HomeAssembly;
 			sourceTree = "<group>";
 		};
+		8D3B40DC27839AD000A30FAB /* User */ = {
+			isa = PBXGroup;
+			children = (
+				8D3B40DD27839AE400A30FAB /* User.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		8D959380278512F700A7BD07 /* HomeViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8D9593812785133000A7BD07 /* HomeTableViewCell.swift */,
+				8D9593822785133000A7BD07 /* HomeTableViewCell.xib */,
+			);
+			path = HomeViewCell;
+			sourceTree = "<group>";
+		};
+		8D95938527851EA300A7BD07 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8D95938627851EBE00A7BD07 /* ExtViewCell.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8D95938827851EE300A7BD07 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8D95938527851EA300A7BD07 /* Extension */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8DD6CA7B2783BBD900C805CF /* Services  */ = {
+			isa = PBXGroup;
+			children = (
+				8DD6CA7C2783BE9900C805CF /* NetworkServices.swift */,
+				8DD6CA7E2783C11C00C805CF /* CustomError.swift */,
+				8DD6CA802783C16E00C805CF /* HTTPMethod.swift */,
+				8DD6CA822783C18E00C805CF /* Path.swift */,
+				8DD6CA842783C85800C805CF /* APIError.swift */,
+			);
+			path = "Services ";
+			sourceTree = "<group>";
+		};
+		B8F517840949947591D8BB36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11C2092FA0D6849C6000C71B /* Pods-VIPER-Air.debug.xcconfig */,
+				35A83E4A130E49D7F8788222 /* Pods-VIPER-Air.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D3B40C427835BE600A30FAB /* Build configuration list for PBXNativeTarget "VIPER-Air" */;
 			buildPhases = (
+				826D03A26F7FF22D78D65FBC /* [CP] Check Pods Manifest.lock */,
 				8D3B40AC27835BE200A30FAB /* Sources */,
 				8D3B40AD27835BE200A30FAB /* Frameworks */,
 				8D3B40AE27835BE200A30FAB /* Resources */,
+				49FED703BB185E45FD252E0D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,11 +288,54 @@
 			files = (
 				8D3B40C027835BE600A30FAB /* LaunchScreen.storyboard in Resources */,
 				8D3B40BD27835BE600A30FAB /* Assets.xcassets in Resources */,
+				8D9593842785133000A7BD07 /* HomeTableViewCell.xib in Resources */,
 				8D3B40BB27835BE200A30FAB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49FED703BB185E45FD252E0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPER-Air/Pods-VIPER-Air-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPER-Air/Pods-VIPER-Air-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VIPER-Air/Pods-VIPER-Air-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		826D03A26F7FF22D78D65FBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VIPER-Air-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D3B40AC27835BE200A30FAB /* Sources */ = {
@@ -208,11 +344,19 @@
 			files = (
 				8D3B40B827835BE200A30FAB /* HomeViewController.swift in Sources */,
 				8D3B40D4278360DE00A30FAB /* HomeRouter.swift in Sources */,
+				8D9593832785133000A7BD07 /* HomeTableViewCell.swift in Sources */,
 				8D3B40B427835BE200A30FAB /* AppDelegate.swift in Sources */,
+				8DD6CA812783C16E00C805CF /* HTTPMethod.swift in Sources */,
+				8DD6CA7D2783BE9900C805CF /* NetworkServices.swift in Sources */,
 				8D3B40B627835BE200A30FAB /* SceneDelegate.swift in Sources */,
+				8DD6CA7F2783C11C00C805CF /* CustomError.swift in Sources */,
+				8D3B40DE27839AE400A30FAB /* User.swift in Sources */,
+				8D95938727851EBE00A7BD07 /* ExtViewCell.swift in Sources */,
 				8D3B40D1278360BD00A30FAB /* HomeInteractor.swift in Sources */,
 				8D3B40CF278360AE00A30FAB /* HomePresenter.swift in Sources */,
+				8DD6CA832783C18E00C805CF /* Path.swift in Sources */,
 				8D3B40D82783612400A30FAB /* HomeAssembly.swift in Sources */,
+				8DD6CA852783C85800C805CF /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +500,7 @@
 		};
 		8D3B40C527835BE600A30FAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11C2092FA0D6849C6000C71B /* Pods-VIPER-Air.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -384,6 +529,7 @@
 		};
 		8D3B40C627835BE600A30FAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35A83E4A130E49D7F8788222 /* Pods-VIPER-Air.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
