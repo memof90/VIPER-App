@@ -11,4 +11,6 @@ target 'VIPER-Air' do
 
   pod 'Alamofire'
 
+  pod 'Kingfisher'
+
 end

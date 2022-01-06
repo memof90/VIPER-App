@@ -31,7 +31,7 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.presenter?.viewDidLoad()
 //        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UsersTableView")
-        configureCell()
+        configureTable()
         RegisterNibCells()
         
     }
@@ -60,7 +60,7 @@ extension HomeViewController: HomeView {
 }
 
 extension HomeViewController: UITableViewDelegate {
-    func configureCell() {
+    func configureTable() {
         self.tableView.delegate = self
         self.tableView.dataSource = self
     }
