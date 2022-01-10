@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeTableViewCell: UITableViewCell {
     
@@ -37,12 +38,38 @@ class HomeTableViewCell: UITableViewCell {
     }
     
     func configureCell(user: UserResult, index: Int) {
-        guard let name = user.name?.first, let lastName = user.name?.last, let gender = user.gender, let age = user.dob?.age else {return}
+        guard let name = user.name?.first, let lastName = user.name?.last, let gender = user.gender, let age = user.dob?.age, let imageMedium = user.picture?.medium else {return}
         self.nameLbl.text = "\(index). \(name) \(lastName)"
         self.genderLbl.text =  gender
         self.ageLbl.text = "Edad: \(age)"
         
+        loadImage(nameImage: imageMedium)
         
+    }
+    
+    func loadImage(nameImage: String) {
+        let url = URL(string: nameImage)
+        let processor = DownsamplingImageProcessor(size: HomeImage.bounds.size)
+                     |> RoundCornerImageProcessor(cornerRadius: 20)
+        HomeImage.kf.indicatorType = .activity
+        HomeImage.kf.setImage(
+            with: url,
+            placeholder: UIImage(named: "placeholderImage"),
+            options: [
+                .processor(processor),
+                .scaleFactor(UIScreen.main.scale),
+                .transition(.fade(1)),
+                .cacheOriginalImage
+            ])
+        {
+            result in
+            switch result {
+            case .success(let value):
+                print("Task done for: \(value.source.url?.absoluteString ?? "")")
+            case .failure(let error):
+                print("Job failed: \(error.localizedDescription)")
+            }
+        }
     }
     
     override func prepareForReuse() {

@@ -26,6 +26,7 @@
 		8DD6CA812783C16E00C805CF /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD6CA802783C16E00C805CF /* HTTPMethod.swift */; };
 		8DD6CA832783C18E00C805CF /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD6CA822783C18E00C805CF /* Path.swift */; };
 		8DD6CA852783C85800C805CF /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD6CA842783C85800C805CF /* APIError.swift */; };
+		8DFD1EE527875BF900CE9BCB /* NavigationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFD1EE427875BF900CE9BCB /* NavigationBuilder.swift */; };
 		B4D8141D6D6FB593E92AD989 /* Pods_VIPER_Air.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6CAAA7BC5E490378895751 /* Pods_VIPER_Air.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		8DD6CA802783C16E00C805CF /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		8DD6CA822783C18E00C805CF /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		8DD6CA842783C85800C805CF /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		8DFD1EE427875BF900CE9BCB /* NavigationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBuilder.swift; sourceTree = "<group>"; };
 		BD6CAAA7BC5E490378895751 /* Pods_VIPER_Air.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_Air.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 		8D3B40B227835BE200A30FAB /* VIPER-Air */ = {
 			isa = PBXGroup;
 			children = (
+				8DFD1EE327875BD800CE9BCB /* Navigation */,
 				8D95938827851EE300A7BD07 /* Utils */,
 				8DD6CA7B2783BBD900C805CF /* Services  */,
 				8D3B40C727835D4900A30FAB /* Modules */,
@@ -215,6 +218,14 @@
 				8DD6CA842783C85800C805CF /* APIError.swift */,
 			);
 			path = "Services ";
+			sourceTree = "<group>";
+		};
+		8DFD1EE327875BD800CE9BCB /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				8DFD1EE427875BF900CE9BCB /* NavigationBuilder.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		B8F517840949947591D8BB36 /* Pods */ = {
@@ -351,6 +362,7 @@
 				8D3B40B627835BE200A30FAB /* SceneDelegate.swift in Sources */,
 				8DD6CA7F2783C11C00C805CF /* CustomError.swift in Sources */,
 				8D3B40DE27839AE400A30FAB /* User.swift in Sources */,
+				8DFD1EE527875BF900CE9BCB /* NavigationBuilder.swift in Sources */,
 				8D95938727851EBE00A7BD07 /* ExtViewCell.swift in Sources */,
 				8D3B40D1278360BD00A30FAB /* HomeInteractor.swift in Sources */,
 				8D3B40CF278360AE00A30FAB /* HomePresenter.swift in Sources */,

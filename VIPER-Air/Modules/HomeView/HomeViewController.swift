@@ -31,6 +31,7 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.presenter?.viewDidLoad()
 //        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UsersTableView")
+        self.title = "AirPlane"
         configureTable()
         RegisterNibCells()
         
